@@ -43,20 +43,6 @@ Pymavlink supports both python2 and python3.
 
 The following instructions assume you are using Python 2 and a Debian-based (like Ubuntu) installation.
 
-## Dependencies
-
-Pymavlink has several dependencies :
-
-    - future : for python 2 and python 3 interoperability (http://python-future.org/)
-    - lxml : for checking and parsing xml file (http://lxml.de/installation.html)
-    - python-dev : for mavnative
-    - a C compiler : for mavnative
-
-Optional :
-
-    - numpy : for FFT
-    - pytest : for tests
-
 ### On linux
 
 lxml has some additional dependencies that can be installed with your package manager (here with `apt-get`) :
