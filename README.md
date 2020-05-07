@@ -44,7 +44,8 @@ https://ardupilot.org/dev/docs/ros-install.html#installing-mavros
 ## Documentation
 ### ROS Interface for ArduPilot
 https://ardupilot.org/dev/docs/ros.html
-
+### Using Gazebo with SITL
+https://ardupilot.org/dev/docs/using-gazebo-simulator-with-sitl.html
 ### Mavlink Interface
 Please see http://ardupilot.org/dev/docs/mavlink-commands.html for documentation.
 For realtime discussion please see the pymavlink gitter channel here
@@ -61,27 +62,20 @@ The following instructions assume you are using Python 2 and a Debian-based (lik
 
 ### On linux
 lxml has some additional dependencies that can be installed with your package manager (here with `apt-get`) :
-
 ```bash
 sudo apt-get install gcc python-dev libxml2-dev libxslt-dev
 ```
 Optional for FFT scripts and tests:
-
 ```bash
 sudo apt-get install python-numpy python-pytest
 ```
 Using pip you can install the required dependencies for pymavlink :
-
 ```bash
 sudo pip2 install -U future lxml
 ```
-The -U parameter allows updating future and lxml version if it is already installed.
-
 ## Installation
 It is recommended to install pymavlink from PyPi with pip, that way dependencies should be auto install by pip.
-
 ```bash
 sudo pip2 install -U pymavlink
 ```
-
 The -U parameter allow to update pymavlink version if it is already installed.
