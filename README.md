@@ -79,12 +79,6 @@ sudo pip2 install -U future lxml
 
 The -U parameter allows updating future and lxml version if it is already installed.
 
-### On Windows
-
-Use pip to install future as for linux.
-Lxml can be installed with a windows installer from here : https://pypi.python.org/pypi/lxml/3.6.0
-
-
 ## Installation
 
 ### For users
@@ -96,31 +90,3 @@ sudo pip2 install -U pymavlink
 ```
 
 The -U parameter allow to update pymavlink version if it is already installed.
-
-#### Mavnative
-
-By default, pymavlink will try to compile and install mavnative which is a C extension for parsing mavlink. Mavnative only supports mavlink1.
-To skip mavnative installation and reduce dependencies like `gcc` and `python-dev`, you can pass `DISABLE_MAVNATIVE=True` environment variable to the installation command:
-
-```bash
-sudo DISABLE_MAVNATIVE=True pip2 install -U pymavlink
-```
-
-### For developers
-
-On the pymavlink directory, you can use :
-
-```bash
-sudo MDEF=PATH_TO_message_definitions pip2 install . -v
-```
-
-The -v parameter will output the installation commands on the terminal.
-The MDEF usage is require as pip install is done from /tmp directory, so it is necessary to use MDEF variable to 
-point on the message_definitions directory.
-Use pip should auto install dependencies and allow to keep them up-to-date with pip. 
-
-Or:
-
-```bash
-sudo python2 setup.py install
-```
