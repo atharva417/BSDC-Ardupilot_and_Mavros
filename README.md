@@ -7,7 +7,7 @@ The mavros_py package includes launch, scripts, waypointfiles folders.
 
 The launch folder contains apm.launch, which is used to launch mavros topics and services. Note that this apm.launch is edited accordingly so that it can connect with ardupilot sitl, as mentioned in docs (FCU ID).
 
-The scripts folder contains the python scripts of which mavarm, mavmode, mavtakeoff are subsidiary files. mavmission.py is main file which coordinates whole mission from start to end.
+The scripts folder contains the python scripts which uses mavros services and messages to communicate with SITL.
 
 The scripts folder also contains the pymavlink folder containing python files which use the pymavlink package to coordinate the  mission.
 
