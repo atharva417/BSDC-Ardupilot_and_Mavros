@@ -1,6 +1,6 @@
 # BSDC-Ardupilot_and_Mavros
 (Please complete installation of ArduPilot, SITL, Mavros and pymavlink. Instructions for the same are given below.)
-Above are the contents of src folder of ardumavros_ws workspace.
+Given above is ardumavros workspace. In src there are two packages. Mavros_msgs and Mavros_py
 
 The mavros_msgs package is taken as it is from mavros. It contains all required msg and srv files.
 The mavros_py package includes launch, scripts, waypointfiles folders.
