@@ -73,6 +73,6 @@ if __name__ == '__main__':
 	time.sleep(2)
 	setarm(1)
 	time.sleep(2)
-	waypoint('/home/atharva/ardumavros_ws/src/mavros_py/waypointfiles/touch_n_go2.txt')
+	waypoint('/home/atharva/ardumavros_ws/src/mavros_py/waypointfiles/wayptmav.txt')
 	time.sleep(1)
 	setmode('AUTO')
