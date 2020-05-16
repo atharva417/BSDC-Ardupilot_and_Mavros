@@ -15,7 +15,7 @@ The scripts folder also contains the pymavlink folder containing python files wh
 1.  sim_vehicle.py -v ArduPlane --console --map (In Terminal 1)
 2.  (Wait for the map to open.)
 3.  (source the workspace (In Terminal 2))
-4.  Roslaunch mavros apm.launch (In Terminal 2)
+4.  Roslaunch apm.launch (In Terminal 2)(From the launch folder in which the file is)
 5.  (source the workspace (In Terminal 3)
 6.  rosrun mavros (name of whichever mission py file to be run here)
 
