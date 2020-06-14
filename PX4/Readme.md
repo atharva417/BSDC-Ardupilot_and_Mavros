@@ -12,5 +12,6 @@ You are all set!!
 Steps to run above files:
 1. Start your px4 with gazebo by launching mavros_posix_sitl.launch as u do usually.
 (A gazebo world is launched with grass plane, runway and a marker. If u want add some more markers.)
-2. Run broadcaster.py in another terminal.(This is a tf broadcaster. U can check ur tf tree using 'rosrun tf view_frames')
-3. Now run globalmarker.py in another terminal. (As the palne passes over marker its coordinates will be published with 'Marker Found' message)
+2. In PX4 terminal, type in the commands: "commander takeoff" then "commander mode auto:rtl". 
+3. Run broadcaster.py in another terminal.(This is a tf broadcaster. U can check ur tf tree using 'rosrun tf view_frames')
+4. Now run globalmarker.py in another terminal. (As the palne passes over marker its coordinates will be published with 'Marker Found' message)
