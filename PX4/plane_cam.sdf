@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<sdf version='1.5'>
+  <model name='plane_cam'>
+    <include>
+      <uri>model://plane</uri>
+    </include>
+    <!--geotagged images camera-->
+    <include>
+      <uri>model://fpv_cam</uri>
+      <pose>0 0 0.17 0 1.571 0</pose>
+    </include>
+    <joint name="fpv_cam_joint" type="fixed">
+      <parent>plane::base_link</parent>
+      <child>fpv_cam::fpv_link</child>
+    </joint>
+  </model>
+</sdf>
+<!--<include>
+      <uri>model://marker</uri>
+      <pose>8 8 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker</uri>
+      <pose>8 -8 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker</uri>
+      <pose>-8 -8 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://marker</uri>
+      <pose>-8 8 0 0 0 0</pose>
+    </include>-->
