@@ -68,15 +68,14 @@ def detect(data):
 				rospy.loginfo(mat)
 
 			cv2.imshow('frame',cv_image)
-			k = cv2.waitKey(5) & 0xFF
+			p = cv2.waitKey(5) & 0xFF
 	else:
 		print('no marker detected')
 		cv2.imshow('frame',cv_image)
-		k = cv2.waitKey(5) & 0xFF
+		p = cv2.waitKey(5) & 0xFF
 
 if __name__ == '__main__':
 	k = []
-	p = []
 	rospy.init_node('image_gazebo', anonymous=True)
 	listener = tf.TransformListener()
 	lisn = tf.TransformListener()
